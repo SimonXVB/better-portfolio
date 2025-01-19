@@ -1,0 +1,120 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hero img {
+    border: 5px solid rgba(255, 255, 0);
+    box-shadow: 0px 0px 20px rgba(255, 255, 0);
+    border-radius: 10px;
+}
+
+/*Content*/
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.hero-content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-content-box h1 {
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    margin-bottom: 0;
+}
+
+.hero-content-box h2 {
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
+    margin: 0;
+}
+
+.hero-content-box h3 {
+    font-size: clamp(1rem, 1vw, 1.3rem);
+    margin-top: 40px;
+}
+
+.hero-content-box a {
+    color: white;
+}
+
+.hero-content-box a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+/*Content*/
+
+/*Nav*/
+.hero-nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.hero-nav-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-nav-buttons button {
+    color: white;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    background: linear-gradient(180deg, rgb(29, 29, 29), rgba(0,0,0,1));
+    padding-block: 13px;
+    padding-inline: 30px;
+    margin-block: 20px;
+    cursor: pointer;
+    border: 3px solid rgba(255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 0);
+    font-weight: 900;
+    transition: box-shadow 0.2s;
+}
+
+.hero-nav-buttons button:hover {
+    box-shadow: 0px 0px 50px rgba(255, 255, 0, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+    border: 3px solid rgba(255, 255, 0, 0.7);
+}
+/*Nav*/
+
+.item {
+    opacity: 0;
+}
+
+@keyframes arrows {
+    from {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 950px) {
+    .hero-arrows {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content-box {
+        margin-top: 50px;
+    }
+}
