@@ -64,6 +64,8 @@
 .hero-nav-buttons {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-nav-buttons button {
@@ -80,11 +82,11 @@
     margin-top: 16px;
 }
 
-.hero-nav-buttons button:first-child {
+.hero-nav-buttons a:first-child button {
     border-radius: 16px 0 0 16px;
 }
 
-.hero-nav-buttons button:last-child {
+.hero-nav-buttons a:last-child button {
     border-radius: 0 16px 16px 0;
 }
 
