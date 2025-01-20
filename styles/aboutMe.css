@@ -3,7 +3,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    min-height: 80vh;
+    min-height: 90vh;
 }
 
 .about-wrapper {
@@ -12,6 +12,7 @@
 
 .about-wrapper h1 {
     font-size: clamp(1.7rem, 2vw, 3.5rem);
+    margin-top: 0;
     margin-bottom: 16px;
 }
 
@@ -35,11 +36,5 @@
         padding-block: 0px;
         padding-inline: 0px;
         background: none;
-    }
-}
-
-@media (max-width: 550px) {
-    .about-wrapper {
-        margin-block: 64px;
     }
 }

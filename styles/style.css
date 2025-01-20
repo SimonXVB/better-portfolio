@@ -8,3 +8,16 @@
 body {
     margin: 0;
 }
+
+.divider {
+    margin-inline: auto;
+    margin-block: 50px;
+    width: 65vw;
+    border-bottom: 10px dotted rgba(255, 255, 0);
+}
+
+@media (prefers-reduced-motion) {
+    :root {
+        scroll-behavior: auto;
+    }
+}

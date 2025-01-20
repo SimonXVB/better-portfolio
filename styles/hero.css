@@ -3,7 +3,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .hero img {
@@ -70,7 +70,7 @@
 
 .hero-nav-buttons button {
     color: white;
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-size: clamp(1.3rem, 1.2vw, 2.5rem);
     background: linear-gradient(180deg, rgb(29, 29, 29), rgba(0,0,0,1));
     padding-block: 16px;
     padding-inline: 32px;
@@ -116,12 +116,12 @@
 }
 
 @media (max-width: 950px) {
-    .hero-arrows {
-        display: none;
+    .hero {
+        margin-top: 50px;
     }
 
-    .hero-content-box {
-        margin-top: 50px;
+    .hero-arrows {
+        display: none;
     }
 
     .hero-nav-buttons {
@@ -131,5 +131,15 @@
     .hero-nav-buttons button {
         border-radius: 16px !important;
         margin-block: 16px;
+    }
+
+    .hero-nav-buttons a:last-child button {
+        margin-bottom: 0;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .hero-arrows {
+        display: none;
     }
 }
