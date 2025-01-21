@@ -1,4 +1,4 @@
-const arrows = document.getElementsByClassName("item");
+const arrows = document.getElementsByClassName("hero-arrow");
 const buttons = document.getElementsByClassName("hero-button");
 
 for(let i = 0; i < buttons.length; i++) {

@@ -13,7 +13,9 @@ body {
     margin-inline: auto;
     margin-block: 50px;
     width: 65vw;
-    border-bottom: 10px dotted rgba(255, 255, 0);
+    border: 4px solid rgba(255, 255, 0);
+    box-shadow: 0 0 30px rgba(255, 255, 0);
+    border-radius: 50px;
 }
 
 @media (prefers-reduced-motion) {
