@@ -15,7 +15,7 @@
         <div class="hero-content">
             <div class="hero-content-box">
                 <img src="./assets/smallerPFP.jpg" alt="PFP" width="200px" height="200px">
-                <h1>Hi, my name is Simon</h1>
+                <h1 id="hero-header-h1">Hi, my name is Simon</h1>
                 <h2>Junior full-stack web developer</h2>
                 <h3>E-Mail: <a href="mailto:macher517@gmail.com">macher517@gmail.com</a></h3>
             </div>
@@ -40,16 +40,16 @@
         <div class="about-wrapper">
             <h1>About Me</h1>
             <div class="about-content-wrapper">
-                <p>
+                <p id="about-p1">
                     Hi, my name is Simon, I'm 20 years old and currently reside in Styria, Austria. I'm a self-taught web-developer and I've been coding since April 2024.
                 </p>
-                <p>
+                <p id="about-p2">
                     When I first started my coding journey, I wasn't really sure where I wanted to begin, so I decided to do some research and after browsing through a bunch 
                     of reddit threads, I came to the conclusion that starting off with web-dev stuff would be the simplest and most manageable course of action, due to the 
                     fact that HTML and CSS are pretty simple languages, and because I had no coding experience whatsoever back in April. And hey, being able to make 
                     my own websites did sound pretty cool back then.
                 </p>
-                <p>
+                <p id="about-p3">
                     I'm also a really big fan of computer stuff, both software and hardware, and I'm really fond of cooking as well. When it comes to coding, 
                     I really enjoy working on the backend for most of my projects, but I also really like writing CSS and making web pages responsive.
                 </p>
@@ -62,20 +62,20 @@
     <div id="stack">
         <div class="stack-wrapper">
             <h1>Stack</h1>
-            <h2>Technologies I work with</h2>
+            <h2 id="stack-h2">Technologies I work with</h2>
             <div class="stack-content-wrapper">
                 <div class="stack-tech">
                     <ul>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
-                        <li><a href="https://react.dev">React</a></li>
-                        <li><a href="https://expressjs.com">Express</a></li>
-                        <li><a href="https://tailwindcss.com">Tailwind</a></li>
-                        <li><a href="https://www.postgresql.org">PostgreSQL</a></li>
-                        <li><a href="https://www.prisma.io">Prisma</a></li>
-                        <li><a href="https://git-scm.com/">Git</a></li>
-                        <li><a href="https://nodejs.org/en">NodeJS</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a></li>
+                        <li><a href="https://react.dev" target="_blank">React</a></li>
+                        <li><a href="https://expressjs.com" target="_blank">Express</a></li>
+                        <li><a href="https://tailwindcss.com" target="_blank">Tailwind</a></li>
+                        <li><a href="https://www.postgresql.org" target="_blank">PostgreSQL</a></li>
+                        <li><a href="https://www.prisma.io" target="_blank">Prisma</a></li>
+                        <li><a href="https://git-scm.com/" target="_blank">Git</a></li>
+                        <li><a href="https://nodejs.org/en" target="_blank">NodeJS</a></li>
                     </ul>
                 </div>
                 <div class="stack-slider">
@@ -141,13 +141,13 @@
     <div id="github">
         <div class="github-wrapper">
                 <div class="github-notable-header">
-                    <h1>Notable Projects</h1>
+                    <h1 id="github-notable-h1">Notable Projects</h1>
                     <div class="github-plus">+</div>
                     <a href="https://github.com/SimonXVB" target="_blank"><img src="./assets/github-mark-white.png" alt="github-logo"></a>
                 </div>
                 <div class="github-notable">
                     <div class="github-text">
-                        <p>You can find some most of my projects on my Github profile, but here are some of my biggest projects yet. Oh, and cheers for visiting my website.</p>
+                        <p id="github-notable-p">You can find most of my projects on my Github profile, but here are some of my biggest projects yet. Oh, and cheers for visiting my website.</p>
                     </div>
                     <ul>
                         <li><a href="https://github.com/SimonXVB/posta-frontend" target="_blank">Social Media Frontend</a></li>
@@ -158,6 +158,8 @@
                 </div>
         </div>
     </div>
+    <button id="button">Lang</button>
     <script src="arrows.js"></script>
+    <script src="langSwitcher.js"></script>
 </body>
 </html>
