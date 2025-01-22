@@ -9,7 +9,7 @@ const data = {
                 "github-notable-p": "You can find most of my projects on my GitHub profile, but here are some of my biggest projects yet. Oh, and cheers for visiting my website."
         },
         "de": {
-                "hero-header-h1": "Hi, mein name ist Simon",
+                "hero-header-h1": "Hi, mein Name ist Simon",
                 "about-p1": "Hi, mein Name ist Simon, ich bin 20 Jahre alt und wohne derzeit in der Steiermark, Österreich und seit April 2024 bringe ich mir dir gängigen Web-Development Sprachen selbst bei.",
                 "about-p2": "Als ich damals mit Coding anfing, hatte ich keine Ahnung, wo ich anfangen wollte. Also beschloss ich, ein wenig Recherche zu betreiben und nachdem ich mich durch ein paar Foren-Threads gewühlt hatte, kam ich zu dem Entschluss mit Web-Development anzufangen, da sich dies als einfachste und überschaubarste Vorgehensweise für mich darstellte. Und weil HTML und CSS recht simple Sprachen sind und ich damals keinerlei Erfahrung hatte, war die Entscheidung ziemlich eindeutig.",
                 "about-p3": "Ich bin unter anderem auch sehr an Computern (Software und Hardware) interessiert und Kochen macht mir auch sehr viel Spaß. Bei meinen eigenen Projekten arbeite ich gerne am Backend, schreibe aber auch gerne CSS und responsive Web-Design ist bei mir auch ganz weit oben auf der Liste.",
@@ -33,6 +33,7 @@ const btn = document.getElementById("button");
 function checkLang() {
         if(currLang === "de") {
                 btn.innerHTML = "ENG"
+                document.documentElement.lang = "de"
                 heroH1.innerHTML = data.de["hero-header-h1"];
                 aboutP1.innerHTML = data.de["about-p1"];
                 aboutP2.innerHTML = data.de["about-p2"];
@@ -42,6 +43,7 @@ function checkLang() {
                 githubP.innerHTML = data.de["github-notable-p"];
         } else {
                 btn.innerHTML = "DE"
+                document.documentElement.lang = "en"
                 heroH1.innerHTML = data.en["hero-header-h1"];
                 aboutP1.innerHTML = data.en["about-p1"];
                 aboutP2.innerHTML = data.en["about-p2"];
