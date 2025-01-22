@@ -78,13 +78,13 @@
 
 @keyframes slider1 {
     to {
-        bottom: -125px;
+        bottom: -130px;
     }
 }
 
 @keyframes slider2 {
     to {
-        top: -125px;
+        top: -130px;
     }
 }
 

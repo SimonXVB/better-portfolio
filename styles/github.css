@@ -1,0 +1,90 @@
+#github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.github-wrapper {
+    max-width: 80vw;
+}
+
+.github-notable {
+    background: linear-gradient(180deg, rgb(29, 29, 29) 0%, rgba(0,0,0,1) 80%);
+    box-shadow: 0px 0px 50px rgba(255, 255, 0, 0.7);
+    border: 4px solid rgba(255, 255, 0);
+    border-radius: 16px;
+    padding-block: 16px;
+    padding-inline: 32px;
+}
+
+.github-notable-header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: fit-content;
+    margin-bottom: 16px;
+}
+
+.github-plus {
+    font-size: clamp(1.2rem, 2vw, 4rem);
+    margin-inline: 24px;
+    font-weight: 600;
+}
+
+.github-text {
+    font-size: clamp(1rem, 1.1vw, 2rem);
+}
+
+.github-notable-header h1 {
+    font-size: clamp(1.7rem, 2vw, 3.5rem);
+    margin: 0;
+}
+
+.github-notable li {
+    font-size: clamp(1rem, 1.4vw, 4rem);
+    margin-block: 16px;
+    font-weight: 600;
+}
+
+.github-notable a {
+    color: white;
+}
+
+.github-notable a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.github-notable-header img {
+    height: clamp(2rem, 3vw, 5rem);
+    border-radius: 100px;
+    box-shadow: 0 0 25px rgba(255, 255, 0);
+    border: 4px solid rgba(255, 255, 0);
+    padding: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.github-notable-header img:hover {
+    box-shadow: 0px 0px 75px rgba(255, 255, 0, 0.7);
+}
+
+@media (max-width: 450px) {
+    .github-notable {
+        background: none;
+        box-shadow: none;
+        border: none;
+        padding-inline: 0;
+    }
+
+    .github-notable ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .github-notable li {
+        list-style: none;
+    }
+}
